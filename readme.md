@@ -1,4 +1,4 @@
-#pyATIMR
+# pyATIMR
 
 Repository for Antecedent Temperature Index Melt Rate analysis
 
@@ -33,14 +33,14 @@ activate pyATIMR
 ## Relevant Files
 
 `n_segs.txt` - Text file containing the water years and number of liner segments to fit to a sequence of snotel sites
-'''
+```
 Format
 water_year1:[ num linear segments to fit to Snotel Site 1 , num linear segments to fit to Snotel Site 2 ...],
 water_year2:[ num linear segments to fit to Snotel Site 1 , num linear segments to fit to Snotel Site 2 ...],
 
 Example:
 2008: [3,5,2,5,5,5,5]
-'''
+```
 
 `data\Temp_Data.xlsx` - Excel workbook containing SnoTel Temperature observations exported from DSS
 `data\SWE_Data.xlsx` - Excel workbook containing SnoTel SWE observations exported from DSS
