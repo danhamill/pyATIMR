@@ -43,6 +43,13 @@ Example:
 ```
 
 `data\Temp_Data.xlsx` - Excel workbook containing SnoTel Temperature observations exported from DSS
+
 `data\SWE_Data.xlsx` - Excel workbook containing SnoTel SWE observations exported from DSS
 
 `py_env.yml` = Configuration file for anaconda environment
+
+## Running the analysis
+
+```
+python pyATIMR\main.py -t data\Temp_Data.xlsx -s data\SWE_Data.xlsx -b 32 -n n_segs.txt -o output.xlsx
+```
