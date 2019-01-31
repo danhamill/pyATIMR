@@ -1,0 +1,15 @@
+name: pyATIMR
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6.5
+  - pandas
+  - matplotlib
+  - openpyxl
+  - pip
+  - pip:
+    - pwlf
+    - openpyxl
+    - xlrd
+    - xlsxwriter
