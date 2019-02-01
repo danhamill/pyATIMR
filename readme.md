@@ -7,17 +7,30 @@ Daniel Hamill daniel.d.hamill@usace.army.mil
 
 ## dependencies
 ```
+python 3.6.5
 pandas - Data Wrangler
 numpy - Numerical Operations
-[Piecewise Linear Function (pwlf)](https://github.com/cjekel/piecewise_linear_fit_py) - Python Library for to fit piecewise linear functions
+[Piecewise Linear Function Package](https://github.com/cjekel/piecewise_linear_fit_py) - Python Library for to fit piecewise linear functions
 matplotlib - Plotting
 pip - Python Package manager
-openpyxl = Python Library for Writing Excel Workbooks
+openpyxl - Python Library for Writing to existing Excel Workbooks
+xlrd - Python Library for Writing to existing Excel Workbooks
+xlsxwriter - Python Library for writing  new Excel Workbooks
 ```
 
+## Clone the repository to a working directory:
 
-Installation:
-It recommended python package be installed using [Anaconda](https://www.anaconda.com/) python package manager.  From anaconda prompt:
+```
+git clone https://github.com/danhamill/pyATIMR.git
+```
+
+If you dont have git for windows intalled, you can also download a [zip file](https://github.com/danhamill/pyATIMR/archive/master.zip) from the online repository.
+
+## Installation
+
+I recommend that this package be installed using the [Anaconda](https://www.anaconda.com/) python package manager.  It comes with a robust set pre-installed python packages for scientific computing.  It also allows for the creation of virtual environments that can be used to resolve package interdependencies.
+
+Open an Anaconda a prompt in the directory where you cloned the repository and type:
 
 ```
 conda env create -f tf_env.yml
@@ -52,4 +65,13 @@ Example:
 
 ```
 python pyATIMR\main.py -t data\Temp_Data.xlsx -s data\SWE_Data.xlsx -b 32 -n n_segs.txt -o output.xlsx
+```
+
+Definition of flags:
+```
+-t path to excel workbook exported from dss with SnoTel temperature observations
+-s path to excel workbook exported from dss with SnoTel SWE observations
+-b base temperature in °F
+-n path to n_segs text file explained above
+-o name of output excel workbook
 ```
