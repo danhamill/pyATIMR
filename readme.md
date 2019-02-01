@@ -5,7 +5,7 @@ Repository for Antecedent Temperature Index Melt Rate analysis
 A collection of scripts written by:
 Daniel Hamill daniel.d.hamill@usace.army.mil
 
-## dependencies
+## Dependencies
 ```
 python 3.6.5
 pandas - Data Wrangler
@@ -33,7 +33,7 @@ I recommend that this package be installed using the [Anaconda](https://www.anac
 Open an Anaconda a prompt in the directory where you cloned the repository and type:
 
 ```
-conda env create -f tf_env.yml
+conda env create -f py_env.yml
 ```
 
 After the anaconda environment `pyATIMR` is created, you can enter it with:
@@ -43,9 +43,9 @@ activate pyATIMR
 ```
 
 
-## Relevant Files
+## Required Files
 
-`n_segs.txt` - Text file containing the water years and number of liner segments to fit to a sequence of snotel sites
+`n_segs.txt` - Text file containing the water years and number of linear segments to fit to a sequence of snotel sites
 ```
 Format
 water_year1:[ num linear segments to fit to Snotel Site 1 , num linear segments to fit to Snotel Site 2 ...],
